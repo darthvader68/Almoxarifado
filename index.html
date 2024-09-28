@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almoxarifado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.jfif" alt="logo">
+        </div>
+        <h1>Bem-vindo ao Almoxarifado</h1>
+    </header>
+    <main>
+        <section id="estoque">
+            <h2>Lista de Produtos</h2>
+                <aside id="produtos">
+                    <!-- Os produtos serão inseridos aqui -->
+                    <div class="card">
+                        <img src="img/escritorio.jpg" alt="Escritorio">
+                        <p>Escritorio</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/hidraulico.jpg" alt="Hidraulica">
+                        <p>Hidraulica</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/eletrico.jfif" alt="Eletrica">
+                        <p>Eletrica</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/informatica.png" alt="Informatica">
+                        <p>Informatica</p>
+                    </div>
+                </aside>
+        </section>
+        <section id="cadastro">
+            <h2>Cadastrar Produto</h2>
+            <form id="formCadastro">
+                <input type="text" id="nomeProduto" placeholder="Nome do Produto" required>
+                <input type="number" id="quantidadeProduto" placeholder="Quantidade" required>
+                <button type="submit">Adicionar Produto</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Almoxarifado, by Milton Gomes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
