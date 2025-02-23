@@ -1,2 +1,2 @@
 # Almoxarifado
-site para sistema de almoxarifado
+ site sobre almoxarifado

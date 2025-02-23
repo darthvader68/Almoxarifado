@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Almoxarifado</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <div class="logo">
+                <img src="img/logo.jfif" alt="logo">
+            </div>
+            <h1>Sistema de Almoxarifado</h1>
+            <nav>
+                <ul>
+                    <li><a href="#estoque"><i class="fas fa-box"></i> Estoque</a></li>
+                    <li><a href="#cadastro"><i class="fas fa-plus-circle"></i> Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="estoque">
+            <div class="section_header">
+                <h2><i class="fas fa-boxes"></i> Categorias de Produtos</h2>
+                <div class="search_bar">
+                    <input type="text" placeholder="Buscar produtos..." id="searchInput">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="cards_container" id="produtos">
+                <div class="card">
+                    <div class="card_image">
+                        <img src="img/escritorio.jpg" alt="Escritorio">
+                    </div>
+                    <div class="card_content">
+                        <h3>Material de Escritório</h3>
+                        <p>Papelaria, organização e suprimentos</p>
+                        <button class="card_button">Ver Produtos</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_image">
+                        <img src="img/hidraulico.jpg" alt="hidraulico">
+                    </div>
+                    <div class="card_content">
+                        <h3>Material Hidráulico</h3>
+                        <p>Conexões, tubos e acessórios</p>
+                        <button class="card_button">Ver Produtos</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_image">
+                        <img src="img/eletrico.jfif" alt="Escritorio">
+                    </div>
+                    <div class="card_content">
+                        <h3>Material Elétrico</h3>
+                        <p>Cabos, disjuntores e componentes</p>
+                        <button class="card_button">Ver Produtos</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_image">
+                        <img src="img/informatica.png" alt="Escritorio">
+                    </div>
+                    <div class="card_content">
+                        <h3>Informática</h3>
+                        <p>Periféricos, componentes e acessórios</p>
+                        <button class="card_button">Ver Produtos</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_image">
+                        <img src="img/mat_limpeza.png" alt="material_limpeza">
+                    </div>
+                    <div class="card_content">
+                        <h3>Material de Limpeza</h3>
+                        <p>Detergentes, desinfetantes, esponjas</p>
+                        <button class="card_button">Ver Produtos</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_image">
+                        <img src="img/ferramentas_equipamentos.png" alt="ferramentas_equipamentos">
+                    </div>
+                    <div class="card_content">
+                        <h3>Ferramentas e Equipamentos</h3>
+                        <p>Martelos, alicates, trenas, parafusos</p>
+                        <button class="card_button">Ver Produtos</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cadastro">
+            <div class="form_container">
+                <h2><i class="fas fa-plus-circle"></i> Cadastrar Novo Produto</h2>
+                <form id="formCadastro">
+                    <div class="form_group">
+                        <label for="categoria">Categoria:</label>
+                        <select id="categoria" required>
+                            <option value="">Selecione uma categoria</option>
+                            <option value="escritorio">Material de Escritório</option>
+                            <option value="hidraulico">Material Hidráulico</option>
+                            <option value="eletrico">Material Elétrico</option>
+                            <option value="informatica">Informática</option>
+                            <option value="informatica">Material de limpeza</option>
+                            <option value="informatica">Ferramentas e equipamentos</option>
+                        </select>
+                    </div>
+                    <div class="form_group">
+                        <label for="nomeProduto">Nome do Produto:</label>
+                        <input type="text" id="nomeProduto" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="quantidadeProduto">Quantidade:</label>
+                        <input type="number" id="quantidadeProduto" min="0" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="descricao">Descrição:</label>
+                        <textarea id="descricao" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="submit_button"><i class="fas fa-save"></i> Cadastrar Produto</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer_content">
+            <p>&copy; 2024 Sistema de Almoxarifado</p>
+            <p>Desenvolvido por Milton Gomes</p>
+        </div>
+    </footer>
+</body>
+</html>
